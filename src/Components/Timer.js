@@ -38,9 +38,15 @@ class Timer extends Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col">{String(this.state.hh).padStart(2, "0")}</div>
-          <div className="col">{String(this.state.mm).padStart(2, "0")}</div>
-          <div className="col">{String(this.state.ss).padStart(2, "0")}</div>
+          <div className="col-sm-1">
+            {String(this.state.hh).padStart(2, "0")}
+          </div>
+          <div className="col-sm-1">
+            {String(this.state.mm).padStart(2, "0")}
+          </div>
+          <div className="col-sm-1">
+            {String(this.state.ss).padStart(2, "0")}
+          </div>
         </div>
         <div className="row">
           <div className="col">hh</div>
