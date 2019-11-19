@@ -49,15 +49,17 @@ class Timer extends Component {
           </div>
         </div>
         <div className="row">
-          <div className="col">hh</div>
-          <div className="col">mm</div>
-          <div className="col">ss</div>
+          <div className="col-sm-1">hh</div>
+          <div className="col-sm-1">mm</div>
+          <div className="col-sm-1">ss</div>
         </div>
         <div className="row">
-          <div className="col">
+          <div className="col-sm-1">
             <button className="btn btn-success" onClick={this.clicked}>
               {this.state.start ? "Pause" : "Start"}
             </button>
+          </div>
+          <div className="col-sm-1">
             <button className="btn btn-danger" onClick={this.reset}>
               Reset
             </button>
